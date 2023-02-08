@@ -1,0 +1,117 @@
+/* Software Engineer: Penny S. */
+
+textarea {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #304D63;
+    background-color: #B2E7E8;
+    margin: auto;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: left;
+}
+
+input[type="radio"] {
+    float: left;
+}
+
+#numToppings {
+    float: right;
+    text-align: right;
+}
+
+#show {
+    display: none;
+}
+
+select {
+    background-color: #B2E7E8;
+    color: #304D63;
+}
+
+p {
+    color: #ED8972;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#dropdown-top {
+    display: inline-block;
+    background-color: #B2E7E8;
+}
+
+#dropdown-box {
+    display: none;
+    position: absolute;
+    width: 75px;
+    height: 200px;
+    overflow: scroll;
+    background-color: #B2E7E8;
+}
+
+#dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-container:hover > #dropdown-box {
+    display: block;
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ED8975;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Times New Roman", Georgia, sans-serif;
+    color: #ED8972;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+body{
+    color: #DC8665;
+    background-color: #304D63;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+button{
+    color: #304D63;
+    background-color: #B2E7E8;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    margin: auto;
+    width: 50%;
+    padding: 10 px;
+    text-align: center;
+}
+
+li {
+    margin: auto;
+    width: 50%;
+    padding: 10 px;
+    text-align: left;
+}
+
+

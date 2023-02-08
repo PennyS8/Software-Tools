@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<! Software Engineer: Penny S. >
+
+
+<! JQuery>
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script src="javascripts/clickFunctions.js"></script>
+
+<html>
+    <head>
+        <title>CS 341: Homework 1/2 -- HTML and CSS and JQuery</title>
+
+        <link rel="stylesheet" href="stylesheets/style.css">
+    </head>
+
+    <body>
+        <! page header>
+        <h1>Cheesecake Order Form</h1>
+
+        <! image of cheesecake>
+        <img id="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/800px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg?20171018065901" alt="Cheesecake with drizzled red syrup" width="150" height="150"><br>
+
+        <div id="remove">
+        <! topping options>
+        Quantity Topping<br>
+        <table>
+            <! creates a table with 2 columns and 3 rows to format radio and option drop down>
+            <tr>
+                <! row 1 of table>
+                <td></td> <! leave empty space>
+                <td>
+                    <! multiple choice option 1>
+                    <input type="radio" name="flavor" id="plain" value="Plain" checked> Plain
+                </td>
+            </tr>
+            <tr>
+                <! row 2 of table>
+                <td>
+                    <! dropdown menu with numerical range [0, 12] inclusive as options>
+                    <select id="numToppings">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </td>
+                <td>
+                    <! multiple choice option 2>
+                    <input type="radio" name="flavor" id="cherry" value="Cherry">Cherry
+                </td>
+            </tr>
+            <tr>
+                <! row 3 of table>
+                <td></td> <! leave empty space>
+                <td>
+                    <! multiple choice option 3>
+                    <input type="radio" name="flavor" id="chocolate" value="Chocolate">
+                    <label for="chocolate">Chocolate</label>
+                </td>
+            </tr>
+        </table>
+
+        <! extra order notes>
+        Notes:<br>
+        <textarea rows="5" cols="55" id="instructions" style="font-size:9px " placeholder="Enter any special instructions here."></textarea><br>
+
+        <! order submission button>
+        <button id="order" type="button">Order</button><br>
+
+        <! order log>
+        <h3>Orders for 
+            <span id="dropdown-container">
+                <div id="dropdown-top">Jan</div>
+                <div id="dropdown-box">
+                    <a>Jan</a>
+                    <a>Feb</a>
+                    <a>Mar</a>
+                    <a>Apr</a>
+                    <a>May</a>
+                    <a>Jun</a>
+                    <a>Jul</a>
+                    <a>Aug</a>
+                    <a>Sep</a>
+                    <a>Oct</a>
+                    <a>Nov</a>
+                    <a>Dec</a>
+                </div>
+            </span>
+        </h3>
+
+        <ul>
+            <li>11 cherry</li>
+            <li>17 chocolate</li>
+            <li>31 plain</li>
+        </ul>
+
+    </div>
+
+    <div id="show">
+        Thank you! Your order has been placed
+        <h3>Order Details:</h3>
+        <div id="toppings-confirm"></div>
+        <div id="quantity-confirm"></div>
+        <div id="notes-confirm"></div>
+    </div>
+
+    </body>
+    
+</html>
