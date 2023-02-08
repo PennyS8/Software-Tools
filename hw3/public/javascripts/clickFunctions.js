@@ -25,15 +25,14 @@ $(document).ready(function () {
 	}
 	$("#order").click(order);
 
-
-	/* $("#dropdown-box a").click(function(){
+	/*
+	$("#dropdown-box a").click(function(){
 		$("#dropdown-top").text($(this).text());
-	}) */
-
+	})
+	*/
 	dropClick = function(){
 		$("#dropdown-top").text($(this).text());
 	}
 	$("#dropdown-box a").click(dropClick);
-
 
 });
