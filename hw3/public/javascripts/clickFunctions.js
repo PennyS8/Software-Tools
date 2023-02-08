@@ -11,7 +11,6 @@ $(document).ready(function () {
 		if ($("#instructions").val().includes('vegan')) {
 			alert("Warning: All cheesecakes contain dairy");
 		} else {//else show order made
-
 			flavor = $("input[name='flavor']:checked").val();
 			$("#toppings-confirm").text('Topping: ' + flavor);
 
@@ -20,7 +19,6 @@ $(document).ready(function () {
 
 			$("#remove").hide();
 			$("#show").show();
-			
 		}
 	}
 	$("#order").click(order);
