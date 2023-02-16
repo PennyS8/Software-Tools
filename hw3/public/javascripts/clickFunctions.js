@@ -29,7 +29,9 @@ $(document).ready(function () {
 		$.post(
 			'/orders', // url
 			function(data) { // success callback
-				$("#ordersList").text(JSON.stringify(data));
+				$("#cherryOrder").text(data.data[0].quantity + " " + data.data[0].topping);
+				$("#chocolateOrder").text(data.data[1].quantity + " " + data.data[1].topping);
+				$("#plainOrder").text(data.data[2].quantity + " " + data.data[2].topping);
 			},
 			"json"
 		);
