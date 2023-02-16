@@ -23,13 +23,16 @@ $(document).ready(function () {
 	}
 	$("#order").click(order);
 
-	/*
-	$("#dropdown-box a").click(function(){
-		$("#dropdown-top").text($(this).text());
-	})
-	*/
 	dropClick = function(){
-		$("#dropdown-top").text($(this).text());
+		var month = $(this).text();
+		$("#dropdown-top").text(month);
+		$.post(
+			'/orders', // url
+			function(data) { // success callback
+				$("#ordersList").text(JSON.stringify(data));
+			},
+			"json"
+		);
 	}
 	$("#dropdown-box a").click(dropClick);
 
